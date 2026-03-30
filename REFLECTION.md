@@ -21,7 +21,7 @@ Answer the following questions about your learning experience. Each answer shoul
 
 ## Question 3: How did you overcome the challenges you faced?
 
-**Your Answer:Building high-performance server-side applications, like a backend API that must manage thousands of concurrent user requests, is a direct application of the concepts I learned here. I can make sure that every user receives a prompt answer without any one request stopping the system as a whole by utilizing a thread pool and a fair scheduling method. I can also use different threads for rendering, AI logic, and physics calculations when developing games. This guarantees that even in cases when the background calculations are very intricate or time-consuming, the game will maintain a high frame rate and remain responsive to player inputs.**
+**Your Answer:I resolved the difficulties by methodically analyzing the code, concentrating on one process at a time—particularly P1—and closely monitoring its progression from execution to the ready queue and ultimately to termination. I enhanced the print statements to clearly display the executed time quantum, remaining burst time, and when a process was re-added to the queue after running the program several times and seeing the recurring Round-Robin scheduling pattern. In order to better relate the theory to the behavior of the code, I also went over the Java thread lifecycle from my course notes. The reasoning became much evident when the output was compared to the queue operations in the code. The best option for clearing up the issue was this systematic tracing methodology.**
 
 [Describe your problem-solving approach. Did you read documentation? Ask for help? Debug systematically? What resources did you use? What strategies worked?]
 
@@ -29,7 +29,7 @@ Answer the following questions about your learning experience. Each answer shoul
 
 ## Question 4: How can you apply multithreading concepts in real-world applications?
 
-**Your Answer:Building high-performance server-side apps that manage thousands of concurrent requests is a straightforward application of the multithreading ideas I have mastered. By using a thread pool and an effective scheduling algorithm, it is ensured that no single "heavy" request would prevent the system from responding quickly to any user. Multithreading is also necessary in game development to keep the graphics and user interface threads apart from complex physics and AI computations. A professional user experience depends on the game maintaining a high frame rate and remaining responsive to player inputs, both of which are ensured by this design.**
+**Your Answer:In real-world systems like web browsers, where different threads manage rendering, loading images, playing videos, and reacting to user clicks simultaneously, multithreading is frequently utilized. While another thread downloads data in the background, one thread in mobile apps keeps the user interface responsive. To handle physics calculations, player input, and network connection simultaneously, online games use multithreading. My understanding of how equitable scheduling techniques like Round-Robin maintain tasks' responsiveness and balance has improved as a result of this project. In contemporary software systems, thread management generally enhances user experience and performance.**
 
 [Give specific examples from real applications you use (web browsers, games, mobile apps, etc.). Explain why threads are useful in those scenarios. Connect to what you learned in this assignment.]
 
@@ -38,13 +38,13 @@ Answer the following questions about your learning experience. Each answer shoul
 ## Additional Reflections (Optional)
 
 ### What would you like to learn more about?
-
+Since these ideas are crucial for creating bigger and safer multithreaded systems, I would like to learn more about thread synchronization, race situations, semaphores, mutex locks, and deadlock prevention.
 [Any topics related to threading, concurrency, or operating systems that you're curious about?]
 
 ---
 
 ### How confident do you feel about multithreading concepts now?
-
+I am now confident in my comprehension of ready queue behavior, scheduler flow, lifecycle states, and thread generation. I still need to work on more advanced synchronization and concurrency debugging skills, though.
 [Rate yourself and explain: Beginner / Intermediate / Confident]
 
 [Explain your rating - what do you understand well? What needs more practice?]
